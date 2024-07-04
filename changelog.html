@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
 
 <html lang="zxx">
 
@@ -31,143 +25,117 @@
 
 <body>
 
-<header class="sticky-top navigation">
-  <div class=container>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class=navbar-brand href="index.html"><img class="img-fluid" src="images/logo.png" alt="godocs"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-        <i class="ti-align-right h4 text-dark"></i></button>
-      <div class="collapse navbar-collapse text-center" id=navigation>
-        <ul class="navbar-nav mx-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="search.html">Search Page</a></li>
-        </ul>
-        <form class="form-inline search-wrapper d-none d-lg-block" class="search-wrapper" action="search.html">
-          <input id="search-by" name="s" type="search" class="form-control" placeholder="Search here ...">
-          <button class="border-0 bg-white" type="submit"><i class="ti-search"></i></button>
-        </form>
-        <a href="changelog.html" class="btn btn-sm btn-outline-primary ml-lg-4">changelog</a>
-        <a href="contact.html" class="btn btn-sm btn-primary ml-lg-4">contact</a>
-      </div>
-      <form class="form-inline search-wrapper d-block d-lg-none my-3" class="search-wrapper" action="search.html">
-        <input id="search-by" name="s" type="search" class="form-control" placeholder="Search here ...">
-        <button class="border-0 bg-white" type="submit"><i class="ti-search"></i></button>
-      </form>
-    </nav>
-  </div>
-</header>
+  <header class="sticky-top navigation">
+    <div class=container>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class=navbar-brand href="index.html"><img class="img-fluid" src="images/logo/logo-2.png" alt="godocs"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+          <i class="ti-align-right h4 text-dark"></i></button>
+        <div class="collapse navbar-collapse text-center" id=navigation>
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="foto.html">Portofolio Desaing Conten</a></li>
+            <li class="nav-item"><a class="nav-link" href="video.html">Portofolio Video Conten</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="search.html">Search Page</a></li> -->
+          </ul>
+          <a href="changelog.html" class="btn btn-sm btn-outline-primary ml-lg-4">Paket</a>
+          <div class="btn-group ml-lg-4">
+            <button id="contactButton" class="btn btn-sm btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hubungi kami
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://wa.me/1234567890">Admin Chell</a>
+              <a class="dropdown-item" href="https://wa.me/0987654321">Admin Laras</a>
+            </div>
+          </div>
+          <script>
+            document.getElementById('contactButton').addEventListener('mouseover', function() {
+              let dropdownMenu = document.querySelector('.dropdown-menu');
+              dropdownMenu.classList.add('show');
+            });
+  
+            document.querySelector('.dropdown-menu').addEventListener('mouseover', function() {
+              this.classList.add('show');
+            });
+  
+            document.getElementById('contactButton').addEventListener('mouseout', function() {
+              let dropdownMenu = document.querySelector('.dropdown-menu');
+              dropdownMenu.classList.remove('show');
+            });
+  
+            document.querySelector('.dropdown-menu').addEventListener('mouseout', function() {
+              this.classList.remove('show');
+            });
+          </script>
+        </div>
+      <button id="scrollToTopButton" class="btn btn-sm btn-danger" style="display: none; position: fixed; bottom: 20px; right: 20px;">
+        <i class="ti-arrow-up"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
 
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="p-5 shadow rounded content">
-          <h1>Changelog posts</h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et ustoLorem ipsum dolor sit amet, consetetur.</p>
-          <div class="mt-5">
-
-            <!-- changelog post -->
-            <h3 id="february-updates">February Updates</h3>
-            <p><strong>Feb 6, 2019</strong></p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et ustoLorem ipsum dolor sit amet, consetetur.&rdquo;
-            </p>
-            <div class="mt-4">
-              <div class="badge changed">Changed</div>
-              <ul>
-                <li>
-                  <p>Better support for using applying additional filters to posts_tax_query for categories for custom
-                    WordPress syncs</p>
-                </li>
-                <li>
-                  <p>Reporting fine-tuning for speed improvements (up to 60% improvement in latency)</p>
-                </li>
-                <li>
-                  <p>Replaced login / registration pre-app screens with a cleaner design</p>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <div class="badge removed">Removed</div>
-              <ul>
-                <li>Removed an issue with the sync autolinker only interlinking selectively.</li>
-                <li>Removed up an issue with prematurely logging out users</li>
-              </ul>
-            </div>
-            
-            <hr>
-
-            <!-- changelog post -->
-            <h3 id="march-updates">March Updates</h3>
-            <p><strong>Mar 6, 2019</strong></p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt
-              dolore magna aliquyam erat, sed diam voluptua. At vero eos et ustoLorem ipsum dolor sit amet,
-              consetetur.&rdquo;</p>
-            <div class="mt-4">
-              <div class="badge added">Added</div>
-              <ul>
-                <li>Some scheduled changelogs, tweets, and slack messages queued up this weekend and were not published
-                  on time. We fixed the issue and all delayed publications should be out.</li>
-                <li>We now prioritize keywords over title and body so customers can more effectively influence search
-                  results</li>
-                <li>Support form in the Assistant is now protected with reCaptcha to reduce spam reinitializeOnUrlChange
-                  added to the JavaScript API to improve support for pages with turbolinks</li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <div class="badge fixed">Fixed</div>
-              <ul>
-                <li>Fixed an issue with the sync autolinker only interlinking selectively.</li>
-                <li>Fixed up an issue with prematurely logging out users</li>
-              </ul>
-            </div>
-            
-            <hr>
-
-            <!-- changelog post -->
-            <h3 id="changelog-label">Changelog label</h3>
-            <div class="mt-4">
-              <div class="badge added">Added</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge changed">Changed</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge depricated">Depricated</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge removed">Removed</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge fixed">Fixed</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge security">Security</div>
-            </div>
-            <div class="mt-4">
-              <div class="badge unreleased">Unreleased</div>
-            </div>
-          </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card" style="background-color: #f8f9fa;">
+        <div class="card-body text-center">
+          <img src="images/package/video_design.jpg" class="img-fluid mb-3" alt="Paket Video Desain">
+          <h5 class="card-title" style="font-family: 'Arial', sans-serif; font-weight: bold;">Paket Video Desain</h5>
+          <ul class="list-unstyled" style="font-family: 'Arial', sans-serif;">
+            <li>Paket Basic: 5 Video - Rp 1.500.000</li>
+            <li>Paket Standard: 10 Video - Rp 2.700.000</li>
+            <li>Paket Premium: 20 Video - Rp 4.800.000</li>
+          </ul>
+          <a href="https://wa.me/1234567890" class="btn btn-primary mt-3">Hubungi via WhatsApp</a>
         </div>
       </div>
     </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card" style="background-color: #e9ecef;">
+        <div class="card-body text-center">
+          <img src="images/.jpg" class="img-fluid mb-3" alt="Paket Foto Desain">
+          <h5 class="card-title" style="font-family: 'Arial', sans-serif; font-weight: bold;">Paket Foto Desain</h5>
+          <ul class="list-unstyled" style="font-family: 'Arial', sans-serif;">
+            <li>Paket Basic: 10 Foto - Rp 750.000</li>
+            <li>Paket Standard: 20 Foto - Rp 1.350.000</li>
+            <li>Paket Premium: 40 Foto - Rp 2.400.000</li>
+          </ul>
+          <a href="https://wa.me/1234567890" class="btn btn-primary mt-3">Hubungi via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card" style="background-color: #dee2e6;">
+        <div class="card-body text-center">
+          <img src="images/package/combo_design.jpg" class="img-fluid mb-3" alt="Paket Kombinasi">
+          <h5 class="card-title" style="font-family: 'Arial', sans-serif; font-weight: bold;">Paket Kombinasi</h5>
+          <ul class="list-unstyled" style="font-family: 'Arial', sans-serif;">
+            <li>Paket Basic: 5 Video & 10 Foto - Rp 1.950.000</li>
+            <li>Paket Standard: 10 Video & 20 Foto - Rp 3.450.000</li>
+            <li>Paket Premium: 20 Video & 40 Foto - Rp 6.000.000</li>
+          </ul>
+          <a href="https://wa.me/1234567890" class="btn btn-primary mt-3">Hubungi via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
-
 <footer>
   <div class="container">
     <div class="row align-items-center border-bottom py-5">
       <div class="col-lg-4">
         <ul class="list-inline footer-menu text-center text-lg-left">
-          <li class="list-inline-item"><a href="changelog.html">Changelog</a></li>
-          <li class="list-inline-item"><a href="contact.html">contact</a></li>
-          <li class="list-inline-item"><a href="search.html">Search</a></li>
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          <li class="list-inline-item"><a href="foto.html">Portofolio Video Conten</a></li>
+          <li class="list-inline-item"><a href="video.html">Portofolio Desaing Conten</a></li>
         </ul>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <a class="navbar-brand" href="index.html">
-          <img class="img-fluid" src="images/logo.png" alt="Hugo documentation theme">
+          <img class="img-fluid" src="images/logo/logo-2.png" width="380" alt="Hugo documentation theme">
         </a>
       </div>
       <div class="col-lg-4">
@@ -180,7 +148,7 @@
       </div>
     </div>
     <div class="py-4 text-center">
-      <small class="text-light">Copyright © 2020 a hugo theme by <a href="https://themefisher.com">themefisher</a></small>
+      <small class="text-light">Copyright © 2024 by <a href="https://www.instagram.com/elpellata/">Adel</a></small>
     </div>
   </div>
 </footer>

@@ -1,0 +1,80 @@
+
+<section class="section pb-0">
+  <div class="container">
+    <h2 class="section-title">Paket</h2>
+    <div class="row">
+      <!-- topic -->
+      <div class="col-lg-4 col-md-5 col-sm-6 mb-4">
+        <div class="card match-height">
+          <div class="card-body">
+            <i class="card-icon ti-credit-card mb-4"></i>
+            <h3 class="card-title h4">Account Bill</h3>
+            <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+            <a href="list.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <!-- topic -->
+      <div class="col-lg-4 col-md-5 col-sm-6 mb-4">
+        <div class="card match-height">
+          <div class="card-body">
+            <i class="card-icon ti-package mb-4"></i>
+            <h3 class="card-title h4">Our Features</h3>
+            <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+            <a href="list.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <!-- topic -->
+      <div class="col-lg-4 col-md-5 col-sm-6 mb-4">
+        <div class="card match-height">
+          <div class="card-body">
+            <i class="card-icon ti-settings mb-4"></i>
+            <h3 class="card-title h4">Theme Facility</h3>
+            <p class="card-text">Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.</p>
+            <a href="list.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="col-lg-4 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <video controls class="img-fluid mb-3">
+          <source src="videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h5 class="card-title">Video Title 1</h5>
+        <p class="card-text">Description of the video 1.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <video controls class="img-fluid mb-3">
+          <source src="videos/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h5 class="card-title">Video Title 2</h5>
+        <p class="card-text">Description of the video 2.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 mb-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <video controls class="img-fluid mb-3">
+          <source src="videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h5 class="card-title">Video Title 3</h5>
+        <p class="card-text">Description of the video 3.</p>
+      </div>
+    </div>
+  </div>
